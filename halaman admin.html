@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - NumberOneHealth</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Images/LogoNumberOneHealth.png" alt="NumberOneHealth Logo" />
+            <a>Admin NumberOneHealth</a>
+        </div>
+        
+        <a href="logout.html" class="btnout">Logout</a>
+    </header>
+
+    <main>
+        <!-- Section: Data Berita -->
+        <section id="berita">
+            <h2>Data Berita</h2>
+            <button onclick="tambahBerita()">Tambah Berita</button>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Judul</th>
+                            <th>Konten</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>10 Perkembangan Teknologi Kesehatan</td>
+                            <td>Pada tahun 2024, terobosan teknologi di bidang kesehatan telah membuka pintu menuju masa depan...</td>
+                            <td>
+                                <button>Edit</button>
+                                <button>Hapus</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Section: Data Dokter -->
+        <section id="dokter">
+            <h2>Data Dokter</h2>
+            <button onclick="tambahDokter()">Tambah Dokter</button>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nama</th>
+                            <th>Spesialisasi</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Dr. Jasmine Cooper</td>
+                            <td>Spesialis Anak</td>
+                            <td>
+                                <button>Edit</button>
+                                
+                                <button>Hapus</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Section: Jadwal Dokter -->
+        <section id="jadwal">
+            <h2>Jadwal Dokter</h2>
+            <button onclick="tambahJadwal()">Tambah Jadwal</button>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Dokter</th>
+                            <th>Hari</th>
+                            <th>Jam</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Dr. Jasmine Cooper</td>
+                            <td>Senin</td>
+                            <td>08:00 - 14:00</td>
+                            <td>
+                                <button>Edit</button>
+                                <button>Hapus</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Section: Rekam Medis -->
+        <section id="rekam-medis">
+            <h2>Rekam Medis</h2>
+            <button onclick="tambahRekamMedis()">Tambah Rekam Medis</button>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Pasien</th>
+                            <th>Diagnosis</th>
+                            <th>Dokter</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>John Doe</td>
+                            <td>Flu</td>
+                            <td>Dr. Linda Davis</td>
+                            <td>
+                                <button>Edit</button>
+                                <button>Hapus</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Section: Data Poli -->
+        <section id="poli">
+            <h2>Data Poli</h2>
+            <button onclick="tambahPoli()">Tambah Poli</button>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nama Poli</th>
+                            <th>Deskripsi</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Poli Gigi dan Mulut</td>
+                            <td>Menyediakan perawatan gigi, termasuk pembersihan, penambalan, pencabutan gigi...</td>
+                            <td>
+                                <button>Edit</button>
+                                <button>Hapus</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Poli Anak</td>
+                            <td>Memberikan layanan medis untuk anak-anak, mulai dari bayi hingga remaja...</td>
+                            <td>
+                                <button>Edit</button>
+                                <button>Hapus</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Poli Kandungan</td>
+                            <td>Fokus pada perawatan ibu hamil, persalinan, dan perawatan pasca melahirkan...</td>
+                            <td>
+                                <button>Edit</button>
+                                <button>Hapus</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Section: Antrian -->
+        <section id="Antrian">
+            <h2>Antrian</h2>
+            <button onclick="tambahAntrian()">Tambah Antrian</button>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nama</th>
+                            <th>No Antrian</th>
+                            <th>Layanan</th>
+                            <th>Waktu Mengambil Antrian</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>John Doe</td>
+                            <td>1</td>
+                            <td>Poli Gigi</td>
+                            <td>17.00</td>
+                            <td>
+                                <button>Edit</button>
+                                <button>Hapus</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© NumberOneHealth 2024 | Admin Panel</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

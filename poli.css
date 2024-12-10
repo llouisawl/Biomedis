@@ -1,0 +1,304 @@
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  background-color: #f5f7fb;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 7%;
+  background-color: #053669;
+  color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  width: 150px;
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  width: 55%;
+}
+
+.logo a {
+  font-weight: 700;
+  font-size: 1rem;
+  margin-top: 10px;
+  margin-left: 10px;
+  color: white;
+}
+
+.logo span {
+  background-color: rgb(18, 117, 51);
+  padding: 0px 5px;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+header .navbar {
+  display: flex;
+  align-items: center;
+}
+
+header .navbar a {
+  margin: 0 15px;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+  font-size: 1.1rem;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+header .navbar a:hover {
+  color: white;
+}
+
+header .navbar .dropdown {
+  position: relative;
+}
+
+header .navbar .dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #155396;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  top: 100%;
+  left: 0;
+}
+
+header .navbar .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+header .navbar .dropdown-menu a {
+  color: white;
+  padding: 10px 20px;
+  display: block;
+}
+
+header .navbar .dropdown-menu a:hover {
+  background-color: #1d6dc1;
+}
+
+.Home-btn {
+  display: inline-block;
+  margin-left: 10px;
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.lihat-dokter {
+  background-color: rgb(18, 117, 51);
+  color: aliceblue;
+  padding: 5px 10px; /* Spasi dalam */
+  border-radius: 50px; /* Sudut melengkung */
+  text-decoration: none; /* Hilangkan garis bawah */
+  transition: background-color 0.3s ease;
+  font-size: 12px;
+}
+
+.lihat-dokter:hover {
+  background-color: rgb(5, 44, 18);
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+  color: #053669;
+  text-align: center;
+  padding: 2rem;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.2rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: black;
+}
+
+/* Deskripsi Poli */
+#poli-info {
+  padding: 2rem 7%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.poli-box {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 900px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.poli-box:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.poli-box img {
+  flex: 1;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.poli-content {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.poli-content h2 {
+  font-size: 1.8rem;
+  color: #053669;
+  margin-bottom: 1rem;
+}
+
+.poli-content h3 {
+  font-size: 1.5rem;
+  color: #053669;
+  margin: 1rem 0;
+}
+
+.poli-content p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.poli-content ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.poli-content ul li {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.poli-content ul/* Deskripsi Poli */
+#poli-info {
+  padding: 2rem 7%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.poli-box {
+  display: flex;
+  flex-wrap: nowrap; /* Pastikan elemen tidak membungkus */
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 900px;
+  width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.poli-box:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.poli-box img {
+  flex: 1; /* Gambar mengisi setengah ruang */
+  width: 50%; /* Sesuaikan agar gambar hanya setengah */
+  height: auto;
+  object-fit: cover;
+}
+
+.poli-content {
+  flex: 1; /* Deskripsi mengisi setengah ruang */
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.poli-content h2 {
+  font-size: 1.8rem;
+  color: #053669;
+  margin-bottom: 1rem;
+}
+
+.poli-content h3 {
+  font-size: 1.5rem;
+  color: #053669;
+  margin: 1rem 0;
+}
+
+.poli-content p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.poli-content ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.poli-content ul li {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.poli-content ul li i {
+  margin-right: 10px;
+  color: #053669;
+}
+
+/* Tombol */
+.btn {
+  padding: 0.8rem 1.5rem;
+  background-color: #053669;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0d4677;
+}

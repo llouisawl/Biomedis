@@ -1,0 +1,258 @@
+/* General Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  font-family: "Rubik", sans-serif;
+}
+
+/* Header Styling */
+header {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 7%;
+  width: 100%;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  background-color: #053669;
+}
+
+.logo {
+  width: 150px;
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  width: 55%;
+}
+
+.logo a {
+  font-weight: 700;
+  font-size: 1rem;
+  margin-top: 10px;
+  margin-left: 10px;
+  color: white;
+}
+
+.logo span {
+  background-color: rgb(18, 117, 51);
+  padding: 0px 5px;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.navbar {
+  align-items: center;
+}
+
+.navbar a {
+  color: rgba(255, 255, 255, 0.849);
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin: 1rem;
+  position: relative;
+  transition: 0.5s;
+}
+.navbar a:hover {
+  color: #f9fdff;
+}
+
+.navbar a::after {
+  content: "";
+  background-color: white;
+  width: 0;
+  position: absolute;
+  height: 0.2rem;
+  left: 0;
+  margin-top: 0.5rem;
+  top: 100%;
+  transition: 0.5s;
+}
+.navbar a:hover::after {
+  width: 100%;
+}
+
+/* Main Content Styling */
+main {
+  padding: 40px 20px;
+}
+
+.appointment-form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.639);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.appointment-form h2 {
+  color: #053669;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Form Styling */
+.form-group {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  background-color: #053669;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0288d1;
+}
+
+/* Success Message */
+.success-message {
+  display: none;
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #053669;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  padding: 40px 20px;
+}
+
+/* Footer Box */
+.footer-box {
+  background-color: rgba(3, 48, 82, 0.973);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Grid Layout for Footer Content */
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  text-align: center;
+}
+
+.footer-logo-info a {
+  font-weight: 700;
+  font-size: 1rem;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.footer-logo-info span {
+  background-color: rgb(18, 117, 51);
+  padding: 0px 5px;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.footer-logo {
+  vertical-align: middle;
+  margin-right: 5px;
+  width: 50px;
+}
+
+.footer-contact {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.footer-contact p {
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.footer-contact i {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  color: #a5d0ff;
+}
+
+.footer-bottom {
+  display: flex; /* Menggunakan flexbox */
+  align-items: center; /* Menyelaraskan elemen secara vertikal */
+  justify-content: center; /* Menyelaraskan elemen secara horizontal */
+  flex-wrap: wrap; /* Responsif, pindah ke baris baru jika ruang tidak cukup */
+  gap: 20px; /* Memberikan jarak antar elemen */
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 14px;
+  white-space: nowrap; /* Mencegah teks terpecah ke baris baru */
+}
+
+.social-icons {
+  display: flex;
+  align-items: center; /* Menyelaraskan ikon secara vertikal */
+  gap: 10px; /* Memberikan jarak antar ikon */
+}
+.social-icons a {
+  color: white;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #1057a2;
+}
+
+.success-message {
+  color: green;
+  font-weight: bold;
+  margin-bottom: 15px;
+}

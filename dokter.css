@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  font-family: "Rubik", sans-serif;
+}
+
+header {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 7%;
+  width: 100%;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  background-color: #053669;
+}
+
+.logo {
+  width: 150px;
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  width: 55%;
+}
+
+.logo a {
+  font-weight: 700;
+  font-size: 1rem;
+  margin-top: 10px;
+  margin-left: 10px;
+  color: white;
+}
+
+.logo span {
+  background-color: rgb(18, 117, 51);
+  padding: 0px 5px;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.navbar {
+  align-items: center;
+}
+
+.navbar a {
+  color: rgba(255, 255, 255, 0.849);
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin: 1rem;
+  position: relative;
+  transition: 0.5s;
+}
+.navbar a:hover {
+  color: #f9fdff;
+}
+
+.navbar a::after {
+  content: "";
+  background-color: white;
+  width: 0;
+  position: absolute;
+  height: 0.2rem;
+  left: 0;
+  margin-top: 0.5rem;
+  top: 100%;
+  transition: 0.5s;
+}
+.navbar a:hover::after {
+  width: 100%;
+}
+
+/* Section Styling */
+#DokterDetail {
+  max-width: 1200px;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+
+.dokter-heading {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.dokter-heading h1 {
+  font-size: 1.5rem;
+  color: #fafcfd;
+  background-color: #053669;
+  border-radius: 50px;
+  width: 35%;
+  padding: 10px;
+  text-align: center; /* Teks berada di tengah horizontal */
+  display: flex; /* Aktifkan flexbox */
+  justify-content: center; /* Teks berada di tengah horizontal */
+  align-items: center; /* Teks berada di tengah vertikal */
+  margin: 0 auto; /* Elemen h1 berada di tengah halaman */
+}
+
+.dokter-heading p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.dokter-detail-container {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.dokter-img img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dokter-detail-text {
+  flex: 1;
+}
+
+.dokter-detail-text h2 {
+  font-size: 1.5rem;
+  color: #053669;
+  margin-top: 1.2rem;
+}
+
+.dokter-detail-text p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.dokter-detail-text h4 {
+  font-size: 1.5rem;
+  color: #053669;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.dokter-detail-text p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #333;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+thead {
+  background-color: #053669;
+  color: white;
+}
+
+thead th {
+  text-align: left;
+  padding: 0.8rem;
+}
+
+tbody td {
+  padding: 0.8rem;
+  border-bottom: 1px solid #ccc;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.Home-btn {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.Home-btn a {
+  height: 45px;
+  padding: 0px 15px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  background-color: rgb(18, 117, 51);
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  border-radius: 50px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.Home-btn a i {
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: rgb(171, 237, 193);
+  margin-right: 8px;
+  font-size: 0.5rem;
+  padding-bottom: 1px;
+  color: black;
+}
+
+.Home-btn a:hover {
+  background-color: rgb(5, 44, 18);
+}
